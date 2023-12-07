@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <style>
+        .guess_field {
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Hangman</h1>
+        <p>Great game, would recommend. IGN 10/10</p>
+        <br>
+        <hr width="50%">
+        <p><i>Your word is:</i></p>
+        <h2 id="guessing_field"></h2>
+        <p>You have currently <span id="live_am"></span> lives<br><span id="live_pre">❤❤❤❤❤</span></p>
+        <hr width="50%">
+        <br>
+        <br>
+        <div id="game_running" style="display: block"> 
+            <p>Input a letter<br><i>(only <b>lowercase</b>! there is no uppercase!)</i></p>
+            <input class="guess_field" type="text" id="letter" maxlength="1">
+            <br><br>
+            <button onclick="guess()">Sprawdź</button>
+        </div>
+        </div>
+    </center>
+    <script src="./script.js"></script>
+</body>
+</html>
